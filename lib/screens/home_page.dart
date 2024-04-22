@@ -16,17 +16,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    // singlechildscroll is to prevent the screen overflow and to make the screen scrollable
     return const SingleChildScrollView(
       child: Column(
         children: [
+          // this is the imageSection widget and have a required parameter and cannot be null/empty
           ImageSection(
             image: 'images/sungai.jpg',
           ),
+          // this is the titleSection widget
           TitleSection(
             name: 'Oeschinen Lake Campground',
             location: 'Kandersteg, Switzerland',
           ),
+          // this is the buttonSection widget
           ButtonSection(),
+          // this is the textSection widget
           TextSection(
             description:
                 'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
